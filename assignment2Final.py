@@ -47,7 +47,7 @@ class Individual(object):
         # img.show()
         pix = img.load()
         loss = 0
-        originalImage = Image.open('twoSquares.jpg')
+        originalImage = Image.open('star.jpg')
         originalPixel = originalImage.load()
         for i in range(0,32):
             for j in range(0,32):
