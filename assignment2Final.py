@@ -47,7 +47,7 @@ class Individual(object):
         # img.show()
         pix = img.load()
         loss = 0
-        originalImage = Image.open('star.jpg')
+        originalImage = Image.open('twoSquares.jpg')
         originalPixel = originalImage.load()
         for i in range(0,32):
             for j in range(0,32):
@@ -89,7 +89,7 @@ def main():
             for eachShape in population[0].chromosome: #To draw all the rectanges of the best state in the hundredth generation
                 img1.rectangle(eachShape, (105,105,105,125))
             img.show()
-        if population[0].fitness <= 19000: #Stops when the difference in pixels in less than or equal to 15000
+        if population[0].fitness <= 15000: #Stops when the difference in pixels in less than or equal to 15000
             found = True
             break
         new_generation = []
